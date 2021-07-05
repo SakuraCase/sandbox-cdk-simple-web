@@ -1,9 +1,3 @@
-# Welcome to your CDK TypeScript project!
-
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
 ## Useful commands
 
  * `npm run build`   compile typescript to js
@@ -12,7 +6,6 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
  * `cdk deploy`      deploy this stack to your default AWS account/region
  * `cdk diff`        compare deployed stack with current state
  * `cdk synth`       emits the synthesized CloudFormation template
-
 
 ## 起動
 ```
@@ -25,12 +18,17 @@ sam-beta-cdk local start-api --project-type CDK -n .env_dev.json --docker-networ
 ```
 
 ## 確認
-`curl http://localhost:3000`   
+`curl http://localhost:3000/hogehoge`   
 
-[gateway](http://localhost:3000)   
-[dynamodb-admin](http://localhost:8001)
+- gateway
+    - http://localhost:3000
+- dynamodb-admin
+    - http://localhost:8001
+
+## memo
+`cdk init app --language=typescript`
 
 ## 参考
-https://dev.classmethod.jp/articles/cdk-local-develop/
-https://github.com/cdk-patterns/serverless/tree/main/the-simple-webservice/typescript
-https://github.com/aaronshaf/dynamodb-admin
+- https://dev.classmethod.jp/articles/cdk-local-develop/
+- https://github.com/cdk-patterns/serverless/tree/main/the-simple-webservice/typescript
+- https://github.com/aaronshaf/dynamodb-admin
