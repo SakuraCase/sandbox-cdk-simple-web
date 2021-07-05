@@ -1,0 +1,19 @@
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "path",
+            "AttributeType": "S"
+        }
+    ],
+    "TableName": "hits",
+    "KeySchema": [
+        {
+            "AttributeName": "path",
+            "KeyType": "HASH"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 1,
+        "WriteCapacityUnits": 1
+    }
+}

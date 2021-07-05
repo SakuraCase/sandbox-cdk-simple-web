@@ -1,0 +1,475 @@
+{
+  "version": "12.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "SandboxCdkSimpleWebStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "SandboxCdkSimpleWebStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/SandboxCdkSimpleWebStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lambda",
+              "id": "821173541c5d4b312db539f2273958454bbe480bfb60c5584432b729e7ecf6fa",
+              "packaging": "zip",
+              "sourceHash": "821173541c5d4b312db539f2273958454bbe480bfb60c5584432b729e7ecf6fa",
+              "s3BucketParameter": "AssetParameters821173541c5d4b312db539f2273958454bbe480bfb60c5584432b729e7ecf6faS3BucketC4B75D62",
+              "s3KeyParameter": "AssetParameters821173541c5d4b312db539f2273958454bbe480bfb60c5584432b729e7ecf6faS3VersionKeyFDA2E74E",
+              "artifactHashParameter": "AssetParameters821173541c5d4b312db539f2273958454bbe480bfb60c5584432b729e7ecf6faArtifactHashF6963DD0"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SandboxCdkSimpleWebStack.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-lambda/lib/code.ts:247:20)",
+              "new Function (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:17:26)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/hits/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "hits6AFB21AE",
+            "trace": [
+              "new Table (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1092:18)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:12:19)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/DynamoLambdaHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoLambdaHandlerServiceRole4C867B01",
+            "trace": [
+              "new Role (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Function (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-lambda/lib/function.ts:552:31)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:17:26)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/DynamoLambdaHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoLambdaHandlerServiceRoleDefaultPolicy2B40B090",
+            "trace": [
+              "new Policy (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Function.addToPrincipal (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-iam/lib/grant.ts:168:61)",
+              "Table.combinedGrant (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:906:29)",
+              "Table.grantReadWriteData (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:681:17)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:27:11)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/DynamoLambdaHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoLambdaHandlerFB6EB814",
+            "trace": [
+              "new Function (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-lambda/lib/function.ts:608:35)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:17:26)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/AssetParameters/821173541c5d4b312db539f2273958454bbe480bfb60c5584432b729e7ecf6fa/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters821173541c5d4b312db539f2273958454bbe480bfb60c5584432b729e7ecf6faS3BucketC4B75D62",
+            "trace": [
+              "new FileAssetParameters (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SandboxCdkSimpleWebStack.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-lambda/lib/code.ts:247:20)",
+              "new Function (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:17:26)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/AssetParameters/821173541c5d4b312db539f2273958454bbe480bfb60c5584432b729e7ecf6fa/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters821173541c5d4b312db539f2273958454bbe480bfb60c5584432b729e7ecf6faS3VersionKeyFDA2E74E",
+            "trace": [
+              "new FileAssetParameters (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SandboxCdkSimpleWebStack.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-lambda/lib/code.ts:247:20)",
+              "new Function (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:17:26)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/AssetParameters/821173541c5d4b312db539f2273958454bbe480bfb60c5584432b729e7ecf6fa/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters821173541c5d4b312db539f2273958454bbe480bfb60c5584432b729e7ecf6faArtifactHashF6963DD0",
+            "trace": [
+              "new FileAssetParameters (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SandboxCdkSimpleWebStack.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-lambda/lib/code.ts:247:20)",
+              "new Function (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:17:26)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/Endpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointEEF1FD8F",
+            "trace": [
+              "new HttpApi (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:329:22)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:30:15)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/Endpoint/DefaultRoute/SandboxCdkSimpleWebStackEndpointDefaultRoute127BAF14-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDefaultRouteSandboxCdkSimpleWebStackEndpointDefaultRoute127BAF14Permission2EEE9E9C",
+            "trace": [
+              "Function.addPermission (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:245:5)",
+              "LambdaProxyIntegration.bind (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-apigatewayv2-integrations/lib/http/lambda.ts:39:24)",
+              "new HttpRoute (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/route.ts:123:38)",
+              "new HttpApi (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:334:7)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:30:15)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/Endpoint/DefaultRoute/DefaultRoute-Integration/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDefaultRouteDefaultRouteIntegration4584A785",
+            "trace": [
+              "new HttpIntegration (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/integration.ts:136:19)",
+              "new HttpRoute (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/route.ts:128:25)",
+              "new HttpApi (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:334:7)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:30:15)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/Endpoint/DefaultRoute/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDefaultRouteB7B22F2B",
+            "trace": [
+              "new HttpRoute (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/route.ts:144:19)",
+              "new HttpApi (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:334:7)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:30:15)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/Endpoint/DefaultStage/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDefaultStage0AD21F27",
+            "trace": [
+              "new HttpStage (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/stage.ts:92:5)",
+              "new HttpApi (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:342:27)",
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:30:15)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/HTTP API Url": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HTTPAPIUrl",
+            "trace": [
+              "new SandboxCdkSimpleWebStack (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/lib/sandbox-cdk-simple-web-stack.ts:36:4)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/bin/sandbox-cdk-simple-web.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Module.m._compile (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1118:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)",
+              "Module.load (internal/modules/cjs/loader.js:982:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:875:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/SandboxCdkSimpleWebStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:485:12)",
+              "process.emit (/home/sakuracase/projects/sandbox/sandbox-cdk-simple-web/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ]
+      },
+      "displayName": "SandboxCdkSimpleWebStack"
+    }
+  }
+}

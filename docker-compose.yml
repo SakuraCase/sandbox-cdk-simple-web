@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+    dynamodb:
+        image: amazon/dynamodb-local
+        container_name: dynamodb
+        ports:
+            - 8000:8000
+        networks:
+            - sam-cli
+    dynamodb-admin:
+        container_name: dynamodb-admin
+        image: aaronshaf/dynamodb-admin:latest
+        environment:
+            - DYNAMO_ENDPOINT=dynamodb:8000
+            - AWS_REGION=local
+            - AWS_ACCESS_KEY_ID=local
+            - AWS_SECRET_ACCESS_KEY=local
+        ports:
+            - 8001:8001
+        depends_on:
+            - dynamodb
+        networks:
+            - sam-cli
+networks:
+    sam-cli:
+        external: true
